@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://dshmtl8ci2n1b"]
+
+[ext_resource type="Script" uid="uid://b3qll8hjw7de7" path="res://scenes/entities/signs/sign1.gd" id="1_mbcot"]
+[ext_resource type="Texture2D" uid="uid://dxknuu5516ce0" path="res://assets/sprites/sign.png" id="2_ahgfr"]
+[ext_resource type="FontFile" uid="uid://de3p4a30emoh1" path="res://assets/Minecraftia-Regular.ttf" id="2_w2mlg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w2mlg"]
+size = Vector2(36, 36)
+
+[node name="sign" type="Area2D" groups=["sign"]]
+script = ExtResource("1_mbcot")
+
+[node name="Sign" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_ahgfr")
+
+[node name="coll" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_w2mlg")
+
+[node name="Label" type="Label" parent="."]
+z_index = 7
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -63.0
+offset_right = 153.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.305882)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -1
+theme_override_fonts/font = ExtResource("2_w2mlg")
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

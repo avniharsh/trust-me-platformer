@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbdoo3xswop4"]
+
+[ext_resource type="PackedScene" uid="uid://baih4vl3ysscf" path="res://scenes/levels/level_01.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://b5hisd3tbaw7c" path="res://scenes/entities/player.tscn" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://dhyc2h2ap87j" path="res://scenes/entities/checkpoint_manager.gd" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://iob8lswkcxjs" path="res://scenes/entities/flag.tscn" id="4_jyhfs"]
+
+[node name="Main" type="Node"]
+
+[node name="2DScene" type="Node2D" parent="."]
+
+[node name="Level" parent="2DScene" instance=ExtResource("1_o5qli")]
+
+[node name="Player" parent="2DScene" instance=ExtResource("2_0wfyh")]
+position = Vector2(7, -24)
+scale = Vector2(2, 2)
+
+[node name="CheckpointManager" type="Node2D" parent="2DScene"]
+position = Vector2(-3, 0)
+script = ExtResource("3_sugp2")
+
+[node name="Flags" type="Node" parent="2DScene"]
+
+[node name="Flag1" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(1467, -230)
+
+[node name="Flag2" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(4113, 124)
+
+[node name="Flag3" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(4165, 124)
+
+[node name="Flag4" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(4212, 124)
+
+[node name="Flag5" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-645, 385)
