@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://iob8lswkcxjs"]
+[gd_scene load_steps=7 format=3 uid="uid://iob8lswkcxjs"]
 
 [ext_resource type="Texture2D" uid="uid://ckssbpgvwqt52" path="res://assets/sprites/flag1.png" id="1_amn8n"]
 [ext_resource type="Script" uid="uid://7souaoeycgcx" path="res://scenes/entities/flag.gd" id="1_ukulb"]
 [ext_resource type="Texture2D" uid="uid://b6sqrqjnn86xo" path="res://assets/sprites/flag2.png" id="2_ukulb"]
+[ext_resource type="AudioStream" uid="uid://c3wecx8blm4nb" path="res://assets/sounds/Flag.wav" id="4_s01ia"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ts4f7"]
 animations = [{
@@ -36,5 +37,8 @@ shape = SubResource("RectangleShape2D_v7xjy")
 
 [node name="RespawnPoint" type="Marker2D" parent="."]
 position = Vector2(0, -22)
+
+[node name="CheckpointHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_s01ia")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -28,9 +28,10 @@ func _physics_process(delta: float) -> void:
 			velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_pressed("jump"):
 		if current_state == player_state.RUN and is_on_floor():
 			velocity.y += JUMP_VELOCITY
+			$JumpSound.play()
 		elif current_state == player_state.LADDER:
 			velocity.y = CLIMB_SPEED
 	else:
@@ -47,7 +48,7 @@ func _physics_process(delta: float) -> void:
 			sprite.flip_h = direction > 0
 
 			animation_timer += delta
-			if animation_timer > 0.1:
+			if animation_timer > 0.08:
 				frame_toggle = 1 - frame_toggle
 				sprite.frame = frame_toggle
 				animation_timer = 0

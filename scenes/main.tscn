@@ -12,7 +12,7 @@
 [node name="Level" parent="2DScene" instance=ExtResource("1_o5qli")]
 
 [node name="Player" parent="2DScene" instance=ExtResource("2_0wfyh")]
-position = Vector2(7, -24)
+position = Vector2(-5179, 2287)
 scale = Vector2(2, 2)
 
 [node name="CheckpointManager" type="Node2D" parent="2DScene"]
@@ -22,16 +22,22 @@ script = ExtResource("3_sugp2")
 [node name="Flags" type="Node" parent="2DScene"]
 
 [node name="Flag1" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
-position = Vector2(1467, -230)
+position = Vector2(1461, -228)
 
 [node name="Flag2" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
-position = Vector2(4113, 124)
+position = Vector2(4113, 126)
 
 [node name="Flag3" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
-position = Vector2(4165, 124)
+position = Vector2(4165, 126)
 
 [node name="Flag4" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
-position = Vector2(4212, 124)
+position = Vector2(4212, 126)
 
 [node name="Flag5" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
-position = Vector2(-645, 385)
+position = Vector2(-651, 386)
+
+[node name="Flag6" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-3940, 2502)
+
+[node name="Flag7" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-5627, 2430)
