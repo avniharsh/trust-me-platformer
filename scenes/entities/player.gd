@@ -31,7 +31,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("jump"):
 		if current_state == player_state.RUN and is_on_floor():
 			velocity.y += JUMP_VELOCITY
-			$JumpSound.play()
+			# $JumpSound.play()
 		elif current_state == player_state.LADDER:
 			velocity.y = CLIMB_SPEED
 	else:

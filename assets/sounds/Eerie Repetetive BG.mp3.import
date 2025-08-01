@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpfrmphxtd0bs"
+path="res://.godot/imported/Eerie Repetetive BG.mp3-77d9577180ce23db9c79b986aee937c5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Eerie Repetetive BG.mp3"
+dest_files=["res://.godot/imported/Eerie Repetetive BG.mp3-77d9577180ce23db9c79b986aee937c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -13,7 +13,8 @@ config_version=5
 config/name="Generic Platformic"
 run/main_scene="uid://cbdoo3xswop4"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://assets/sprites/icon.svg"
+config/icon="uid://br1ut0k28qfxt"
+config/windows_native_icon="res://assets/sprites/face_nerd_emo_emoticon_emoji_icon_209625.ico"
 
 [display]
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbdoo3xswop4"]
+[gd_scene load_steps=6 format=3 uid="uid://cbdoo3xswop4"]
 
 [ext_resource type="PackedScene" uid="uid://baih4vl3ysscf" path="res://scenes/levels/level_01.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://b5hisd3tbaw7c" path="res://scenes/entities/player.tscn" id="2_0wfyh"]
 [ext_resource type="Script" uid="uid://dhyc2h2ap87j" path="res://scenes/entities/checkpoint_manager.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://iob8lswkcxjs" path="res://scenes/entities/flag.tscn" id="4_jyhfs"]
+[ext_resource type="AudioStream" uid="uid://bpfrmphxtd0bs" path="res://assets/sounds/Eerie Repetetive BG.mp3" id="5_tbgi4"]
 
 [node name="Main" type="Node"]
 
@@ -12,7 +13,7 @@
 [node name="Level" parent="2DScene" instance=ExtResource("1_o5qli")]
 
 [node name="Player" parent="2DScene" instance=ExtResource("2_0wfyh")]
-position = Vector2(-5179, 2287)
+position = Vector2(-8054, 1677)
 scale = Vector2(2, 2)
 
 [node name="CheckpointManager" type="Node2D" parent="2DScene"]
@@ -34,10 +35,17 @@ position = Vector2(4165, 126)
 position = Vector2(4212, 126)
 
 [node name="Flag5" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
-position = Vector2(-651, 386)
+position = Vector2(-699, 750)
 
 [node name="Flag6" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
 position = Vector2(-3940, 2502)
 
 [node name="Flag7" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
 position = Vector2(-5627, 2430)
+
+[node name="Flag8" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-7911, 1206)
+
+[node name="EerieBackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_tbgi4")
+autoplay = true
