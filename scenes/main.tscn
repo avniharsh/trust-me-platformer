@@ -13,7 +13,7 @@
 [node name="Level" parent="2DScene" instance=ExtResource("1_o5qli")]
 
 [node name="Player" parent="2DScene" instance=ExtResource("2_0wfyh")]
-position = Vector2(-8054, 1677)
+position = Vector2(-7862, 1112)
 scale = Vector2(2, 2)
 
 [node name="CheckpointManager" type="Node2D" parent="2DScene"]
@@ -45,6 +45,9 @@ position = Vector2(-5627, 2430)
 
 [node name="Flag8" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
 position = Vector2(-7911, 1206)
+
+[node name="Flag9" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-5607, 882)
 
 [node name="EerieBackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_tbgi4")
