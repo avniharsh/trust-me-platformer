@@ -1,0 +1,14 @@
+added invisible obstacles bc im evil
+multi-layer fake routes
+
+
+has to figure out that the background rope is a ladder to travel up
+--> must figure out to jump while climbing rope to reach checkpoint
+-----> must do very hard mini platform level
+--------> realizes that rope at the end of mini-level is a wall
+-----------> climb up and do other levels
+--------------> follow text advice, go wrong way
+-----------------> go against text advice, invisible wall at the end
+--------------------> go all the way back to mushroom
+-----------------------> realize that the checkpoint is a ladder
+--------------------------> jump onto weird flag thing

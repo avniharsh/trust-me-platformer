@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const SPEED = 300.0
 const CLIMB_SPEED = -400.0
 const JUMP_VELOCITY = -350.0
@@ -42,10 +41,12 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("move_left", "move_right")
 	if direction:
 		velocity.x = direction  * SPEED
+		
+		sprite.flip_h = direction > 0
+
 
 		# Only animate walk if on the floor**
 		if is_on_floor():
-			sprite.flip_h = direction > 0
 
 			animation_timer += delta
 			if animation_timer > 0.08:
