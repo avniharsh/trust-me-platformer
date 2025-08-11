@@ -1,8 +1,6 @@
-extends Node
-class_name Stopwatch
+extends Timer
 
-var time = 0.0
-var stopped = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -10,10 +8,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if stopped:
-		return
-	else:
-		time += delta
-
-func _reset():
-	time = 0.0
+	pass

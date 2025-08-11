@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.4", "Mobile")
 config/icon="uid://br1ut0k28qfxt"
 config/windows_native_icon="res://assets/sprites/face_nerd_emo_emoticon_emoji_icon_209625.ico"
 
+[autoload]
+
+Global="*res://scenes/Global.gd"
+
 [display]
 
 window/size/viewport_width=640
@@ -95,3 +99,5 @@ textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
 textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
+environment/volumetric_fog/volume_size=32
+environment/volumetric_fog/volume_depth=32
