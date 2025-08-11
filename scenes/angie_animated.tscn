@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://bxpn5q6lo4055"]
+
+[ext_resource type="Texture2D" uid="uid://f7st4lmjejt8" path="res://assets/angelica animation/angelica with a mole.png" id="1_5c46b"]
+[ext_resource type="Script" uid="uid://cu7qwt5ht288c" path="res://scenes/angie_animated.gd" id="1_fhwir"]
+[ext_resource type="Texture2D" uid="uid://dydbjnjhedhwa" path="res://assets/angelica animation/angelica 3.png" id="2_fhwir"]
+[ext_resource type="Texture2D" uid="uid://bo8sql31jhimg" path="res://assets/sprites/angelica.png" id="3_7el6a"]
+[ext_resource type="Texture2D" uid="uid://bq0g34hko3hew" path="res://assets/angelica animation/angelica 2.png" id="4_uo8v8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xl830"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5c46b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fhwir")
+}, {
+"duration": 1.9,
+"texture": ExtResource("3_7el6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uo8v8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fhwir")
+}, {
+"duration": 2.2,
+"texture": ExtResource("3_7el6a")
+}],
+"loop": true,
+"name": &"angie glitch",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7el6a")
+}],
+"loop": true,
+"name": &"angie normal",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7el6a"]
+radius = 66.0
+height = 228.0
+
+[node name="angie_animated" type="Area2D"]
+script = ExtResource("1_fhwir")
+
+[node name="AnimatedAngie" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xl830")
+animation = &"angie glitch"
+frame_progress = 0.965584
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 14)
+shape = SubResource("CapsuleShape2D_7el6a")
+debug_color = Color(0.705909, 0.462264, 0.436985, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

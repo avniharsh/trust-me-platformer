@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var text := "I told you no\nto trust her.\nJump to restart.\n"
+@export var text := "I told you not\nto trust her.\nJump to restart.\n"
 @onready var label = $Label
 
 func _ready() -> void:

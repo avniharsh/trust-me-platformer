@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbdoo3xswop4"]
+[gd_scene load_steps=9 format=3 uid="uid://cbdoo3xswop4"]
 
 [ext_resource type="PackedScene" uid="uid://baih4vl3ysscf" path="res://scenes/levels/level_01.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://b5hisd3tbaw7c" path="res://scenes/entities/player.tscn" id="2_0wfyh"]
@@ -6,8 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://iob8lswkcxjs" path="res://scenes/entities/flag.tscn" id="4_jyhfs"]
 [ext_resource type="AudioStream" uid="uid://bpfrmphxtd0bs" path="res://assets/sounds/Eerie Repetetive BG.mp3" id="5_tbgi4"]
 [ext_resource type="Script" uid="uid://bw46ykdvjyqld" path="res://scenes/canvas_layer.gd" id="6_tefeu"]
+[ext_resource type="FontFile" uid="uid://de3p4a30emoh1" path="res://assets/Minecraftia-Regular.ttf" id="7_o6xl0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tefeu"]
+font = ExtResource("7_o6xl0")
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node"]
 
@@ -16,7 +20,7 @@
 [node name="Level" parent="2DScene" instance=ExtResource("1_o5qli")]
 
 [node name="Player" parent="2DScene" instance=ExtResource("2_0wfyh")]
-position = Vector2(-11325, 669)
+position = Vector2(-15098, 958)
 scale = Vector2(2, 2)
 
 [node name="CheckpointManager" type="Node2D" parent="2DScene"]
@@ -67,6 +71,18 @@ position = Vector2(-7251, -198)
 [node name="Flag14" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
 position = Vector2(-11487, 702)
 
+[node name="Flag15" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-12853, 702)
+
+[node name="Flag16" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-15108, 1393)
+
+[node name="Flag17" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-16365, 964)
+
+[node name="Flag18" parent="2DScene/Flags" instance=ExtResource("4_jyhfs")]
+position = Vector2(-18806, 702)
+
 [node name="EerieBackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_tbgi4")
 volume_db = -80.0
@@ -92,9 +108,11 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -23.0
+offset_left = -51.0
+offset_top = -28.0
+offset_right = -11.0
 grow_horizontal = 0
 grow_vertical = 0
 text = "test"
 label_settings = SubResource("LabelSettings_tefeu")
+horizontal_alignment = 2
