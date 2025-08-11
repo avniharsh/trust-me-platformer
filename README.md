@@ -8,7 +8,7 @@ Trust me. Or don't. The choice is yours.
 ### Play here
 https://of-kneee.itch.io/trust-me
 
-https://hackatime-badge.hackclub.com/U07P4R39BM5/Generic Platformic
+https://hackatime-badge.hackclub.com/U07P4R39BM5/Generic
 
 
 (This is very much a rage bait game in that theres a lot of difficult jumps and trick paths. I applaud those of you who are able to make it to the end.)
