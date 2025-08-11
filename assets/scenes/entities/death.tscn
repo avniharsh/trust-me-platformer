@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhihfpwmfvifp"]
+
+[ext_resource type="Script" uid="uid://da5lux2tgnh4d" path="res://scenes/entities/death.gd" id="1_0hhgj"]
+[ext_resource type="AudioStream" uid="uid://bqtdji47xknax" path="res://assets/sounds/click-death.wav" id="2_metip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w8wr1"]
+size = Vector2(18, 18)
+
+[node name="Death" type="Area2D"]
+script = ExtResource("1_0hhgj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_w8wr1")
+
+[node name="deathsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_metip")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

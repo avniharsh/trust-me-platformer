@@ -20,7 +20,7 @@ outline_color = Color(0, 0, 0, 1)
 [node name="Level" parent="2DScene" instance=ExtResource("1_o5qli")]
 
 [node name="Player" parent="2DScene" instance=ExtResource("2_0wfyh")]
-position = Vector2(-15098, 958)
+position = Vector2(0, -75)
 scale = Vector2(2, 2)
 
 [node name="CheckpointManager" type="Node2D" parent="2DScene"]
@@ -85,7 +85,7 @@ position = Vector2(-18806, 702)
 
 [node name="EerieBackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_tbgi4")
-volume_db = -80.0
+volume_db = 2.0
 autoplay = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]

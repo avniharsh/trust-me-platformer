@@ -17,8 +17,6 @@ func kill_player():
 	
 	player.global_position = checkpoint_manager.last_location
 	player.velocity = Vector2.ZERO
-	stopped = 1
-	await get_tree().create_timer(3.2).timeout
-	stopped = 0
+	#$deathsound.play()
 
 	
