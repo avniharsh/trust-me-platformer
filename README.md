@@ -3,10 +3,16 @@
   ⚠⚠⚠⚠   THIS GAME CAN BE SUPER LOUD   ⚠⚠⚠⚠
 (sounds at the start dont work btw, so no checkpoint and BG audio anymore :C )
 
-Trust me. Or don't. The choice is yours.
+### Trust me. Or don't. The choice is yours.
+
+This was my first full project on Godot! It's a platformer based on trust—or rather, the lack of it. Almost everything said/shown in this game must be taken with a grain of salt, until you learn who's actually on your side and who isn't.
 
 ### Play here
 https://of-kneee.itch.io/trust-me
+
+**playthrough vid if you get stuck:** 
+
+
 
 22 hrs of code :P
 
@@ -17,12 +23,10 @@ have fun :P
 (it is very highly recommended that you are either very good at platformers or have infinite patience to complete this game)
 (pls dont rage quit pls)
 
-ALSO you are playing the game minus the finishing touches because IT ALL BROKE JUST NOW AND I CANT UPLOAD THE FINAL FINAL VERSION AHHHHH
 
 assets:
 https://jazzybee.itch.io/sdvcharactercreator
 https://kenney.nl
 https://pixabay.com/
 
-
-:P
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme):P
