@@ -10,11 +10,9 @@ This was my first full project on Godot! It's a platformer based on trust—or r
 ### Play here
 https://of-kneee.itch.io/trust-me
 
-**playthrough vid if you get stuck:** 
+**playthrough vid if you get stuck:** http://youtube.com/watch?v=i9r-H5lnnjU
 
 
-
-22 hrs of code :P
 
 (This is very much a rage bait game in that theres a lot of difficult jumps and trick paths. I applaud those of you who are able to make it to the end.)
 
